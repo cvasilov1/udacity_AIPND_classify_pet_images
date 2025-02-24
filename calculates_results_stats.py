@@ -85,6 +85,7 @@ def calculates_results_stats(results_dic):
     pct_correct_notdogs = 0 # percentage of correctly classified NON-dogs
     
     # Iterate through the results dictionary to calculate counts
+    # I know that using results_dic.values() is possible here but I like the clear IF structure allowed by calling the 'file_name'  
     for file_name, value in results_dic.items():
         true_label = value[0]
         classifier_label = value[1]

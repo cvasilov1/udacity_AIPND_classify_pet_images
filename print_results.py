@@ -58,7 +58,7 @@ def print_results(results_dic, results_stats_dic, model,
       print_incorrect_dogs - True prints incorrectly classified dog images and 
                              False doesn't print anything(default) (bool)  
       print_incorrect_breed - True prints incorrectly classified dog breeds and 
-                              False doesn't print anything(default) (bool) 
+                              False doesn't print anything (default) (bool) 
     Returns:
            None - simply printing results.
     """      
@@ -77,10 +77,11 @@ def print_results(results_dic, results_stats_dic, model,
             print(f"{key}: {value:.2f}%")
 
     # Print incorrectly classified dogs if indicated by the user
-    if print_incorrect_dogs:
+    # Under the condition that there are wrong dog/notdog image classifications 
+    if print_incorrect_dogs and (results_stats_dic['n_correct_dogs'] + results_stats_dic['n_correct_notdogs'] != results_stats_dic['n_images']):
         print("\n*** Misclassified Dogs ***")
         misclassified_dogs = False
-        for key, value in results_dic.items():
+        for value in results_dic.values(): # Using .values() instead of .items()
             # A misclassified dog is when either:
             # - A dog is misclassified as NOT a dog
             # - NOT a dog is misclassified as a dog
@@ -89,12 +90,14 @@ def print_results(results_dic, results_stats_dic, model,
                 misclassified_dogs = True
         if not misclassified_dogs:
             print("None")
+            
 
     # Print incorrectly classified breeds if indicated by the user
-    if print_incorrect_breed:
+    # Under the condition that there are true dogs with wrongly classified breeds
+    if print_incorrect_breed and (results_stats_dic['n_correct_dogs'] != results_stats_dic['n_correct_breed']): 
         print("\n*** Misclassified Breeds ***")
         misclassified_breeds = False
-        for key, value in results_dic.items():
+        for value in results_dic.values(): # Using .values() instead of .items()
             # A misclassified breed is when:
             # - The pet image 'is-a' dog (value[3] == 1)
             # - The classifier label 'is-a' dog (value[4] == 1)
@@ -106,5 +109,3 @@ def print_results(results_dic, results_stats_dic, model,
             print("None")
 
     print("\n*** End of Results Summary ***\n")
-
-  

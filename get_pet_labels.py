@@ -49,8 +49,11 @@ def get_pet_labels(image_dir):
     # Initialize an empty dictionary
     results_dic = {}
 
-    # Loop through file names and transform them
+    # Loop through file names (skipping any hidden dotfiles) and transform them
     for file_name in file_names:
+        if file_name.startswith("."):
+            continue
+        
         # Extract the label using regex (everything before _[number])
         match = re.match(r"^(.*)_[0-9]+", file_name)
         if match:

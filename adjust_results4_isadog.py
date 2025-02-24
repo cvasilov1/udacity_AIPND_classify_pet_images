@@ -89,7 +89,8 @@ def adjust_results4_isadog(results_dic, dogfile):
 
 
     # 2) Update indexes [3] & [4] in results_dic
-    for filename, value in results_dic.items():
+
+    for value in results_dic.values():  # Use "value" & .values() instead of "filename, value" .items()
         pet_label = value[0].lower().strip()
         classifier_label = value[1].lower().strip()
 
@@ -106,7 +107,7 @@ def adjust_results4_isadog(results_dic, dogfile):
         is_dog_classifier = 1 if any(sub in dognames_set for sub in classifier_sub_labels) else 0
 
         value.extend([is_dog_pet, is_dog_classifier])
-
+    
 
     # Print check
     print()

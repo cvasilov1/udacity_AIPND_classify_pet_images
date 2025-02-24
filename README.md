@@ -149,8 +149,8 @@ For Anaconda: Git Bash supports conda activate, but you might need to enable it 
 | torch        | 2.6.0^  | Provides PyTorch functionality. | Yes |
 | torchvision  | 0.21.0^^ | Supplies pre-trained models (ResNet, VGG, AlexNet). | Yes |
 | argparse     | 3.10.0  | Built-in command-line argument parser (--dir, --arch, etc.). | No (Built into Python) |
-| re          | 2.2.1   | Used for handling regular expressions (e.g., pattern matching). | No (Built into Python) |
-| os          | N/A     | Provides OS-related functions (e.g., file path handling). | No (Built into Python) |
+| re          | 2.2.1   | Used for handling regular expressions. | No (Built into Python) |
+| os          | N/A     | Provides OS-related functions like file path handling. | No (Built into Python) |
 | time        | N/A     | Used for measuring execution time and implementing delays. | No (Built into Python) |
 | ast         | N/A     | Supports parsing and analyzing Python expressions safely. | No (Built into Python) |
 
