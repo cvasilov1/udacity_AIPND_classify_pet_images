@@ -1,0 +1,148 @@
+
+MY PRINT CHECK TO DO #1 - Get input arguments for image folder directory, model architecture to be used and dog breeds textfile
+Directory: uploaded_images/,
+Architecture: resnet,
+Dogfile: dognames.txt.
+MY PRINT CHECK TO DO #1 - END
+
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+These are the files:
+['Dog_01.jpg', 'Dog_02.jpg', 'Kitchen_mixer_01.jpg', 'Young_lion_01.jpg']
+
+MY PRINT CHECK TO DO #2 - Get true pet labels from the image names
+The Dictionary has 4 key-value pairs.
+Dictionary created:
+Image file -> [true pet label]
+Dog_01.jpg -> ['dog']
+Dog_02.jpg -> ['dog']
+Kitchen_mixer_01.jpg -> ['kitchen mixer']
+Young_lion_01.jpg -> ['young lion']
+MY PRINT CHECK TO DO #2 - END
+
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:           Kitchen_mixer_01.jpg  label:              kitchen mixer
+ 4 key:              Young_lion_01.jpg  label:                 young lion
+
+MY PRINT CHECK TO DO #3 - Run classifier and extend the dictionary with classification results
+Pet Image Label Dictionary has 4 key-value pairs.
+Image file -> [true pet label, classifier pet label, match true label=classifier label]
+Dictionary after running the classifier:
+Dog_01.jpg -> ['dog', 'pembroke, pembroke welsh corgi, corgi', 0]
+Dog_02.jpg -> ['dog', 'pembroke, pembroke welsh corgi, corgi', 0]
+Kitchen_mixer_01.jpg -> ['kitchen mixer', 'espresso maker', 0]
+Young_lion_01.jpg -> ['young lion', 'dhole, cuon alpinus', 0]
+MY PRINT CHECK TO DO #3 - END
+
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi
+
+          Kitchen_mixer_01.jpg: 
+Real:              kitchen mixer   Classifier:                 espresso maker
+
+             Young_lion_01.jpg: 
+Real:                 young lion   Classifier:            dhole, cuon alpinus
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+Dog file path: dognames.txt
+Successfully opened dogfile.
+
+Final Extracted dog Nnmes set:
+{'cocker spaniel', 'norwich terrier', 'wire-haired fox terrier', 'sydney silky', 'coach dog', 'manchester terrier', 'wirehaired pointing griffon', 'giant schnauzer', 'soft-coated wheaten terrier', 'scottish deerhound', 'corgi', 'pug', 'italian greyhound', 'cairn terrier', 'canaan dog', 'monkey pinscher', 'airedale', 'field spaniel', 'schnauzer', 'portuguese water dog', 'german shepherd', 'afghan hound', 'staffordshire bull terrier', 'australian terrier', 'australian shepherd', 'black-and-tan coonhound', 'vizsla', 'beagle', 'boston bull', 'st bernard', 'maltese terrier', 'irish terrier', 'black and tan coonhound', 'border terrier', 'english cocker spaniel', 'bobtail', 'cardigan welsh corgi', 'samoyede', 'irish red and white setter', 'miniature poodle', 'border collie', 'airedale terrier', 'german shepherd dog', 'greyhound', 'siberian husky', 'lowchen', 'great pyrenees', 'sleuthhound', 'walker foxhound', 'carriage dog', 'cairn', 'irish water spaniel', 'cane corso', 'leonberger', 'curly-coated retriever', 'shetland sheep dog', 'chow', 'german police dog', 'akita', 'boykin spaniel', 'staffordshire bullterrier', 'boxer', 'collie', 'chrysanthemum dog', 'bullmastiff', 'welsh springer spaniel', 'chihuahua', 'ibizan hound', 'brittany', 'brussels griffon', 'toy terrier', 'bloodhound', 'malamute', 'keeshond', 'samoyed', 'pharaoh hound', 'finnish spitz', 'bearded collie', 'australian cattle dog', 'tibetan terrier', 'chinese crested', 'neapolitan mastiff', 'yorkshire terrier', 'pekinese', 'dogue de bordeaux', 'briard', 'french bulldog', 'american pit bull terrier', 'german shorthaired pointer', 'shetland sheepdog', 'english springer spaniel', 'norwegian lundehund', 'saint bernard', 'entlebucher', 'english setter', 'petit basset griffon vendeen', 'norwegian elkhound', 'english springer', 'affenpinscher', 'icelandic sheepdog', 'bernese mountain dog', 'bouviers des flandres', 'anatolian shepherd dog', 'maltese dog', 'appenzeller', 'dalmatian', 'chow chow', 'glen of imaal terrier', 'american eskimo dog', 'walker hound', 'miniature pinscher', 'black russian terrier', 'schipperke', 'weimaraner', 'greater swiss mountain dog', 'saluki', 'norfolk terrier', 'newfoundland', 'brittany spaniel', 'otterhound', 'beauceron', 'alsatian', 'lakeland terrier', 'blenheim spaniel', 'papillon', 'dandie dinmont terrier', 'gazelle hound', 'clumber', 'american water spaniel', 'poodle', 'clumber spaniel', 'red setter', 'bouvier des flandres', 'sealyham', 'scotch terrier', 'labrador retriever', 'pembroke', 'bull mastiff', 'japanese spaniel', 'basenji', 'bluetick', 'standard schnauzer', 'gordon setter', 'doberman', 'kerry blue terrier', 'toy poodle', 'bull terrier', 'elkhound', 'monkey dog', 'ibizan podenco', 'cocker', 'boston terrier', 'shetland', 'great dane', 'pit bull terrier', 'basset hound', 'deerhound', 'redbone', 'cavalier king charles spaniel', 'scottish terrier', 'mexican hairless', 'staffordshire terrier', 'belgian malinois', 'lhasa', 'hungarian pointer', 'russian wolfhound', 'chesapeake bay retriever', 'english toy spaniel', 'japanese chin', 'flat-coated retriever', 'american foxhound', 'malinois', 'irish wolfhound', 'entlebucher mountain dog', 'leonberg', 'standard poodle', 'sealyham terrier', 'smooth fox terrier', 'afghan', 'bichon frise', 'peke', 'english foxhound', 'miniature schnauzer', 'shih-tzu', 'husky', 'tibetan mastiff', 'malemute', 'silky terrier', 'old english sheepdog', 'belgian tervuren', 'dachshund', 'sussex spaniel', 'german wirehaired pointer', 'maltese', 'american staffordshire terrier', 'scottie', 'pug-dog', 'golden retriever', 'brabancon griffon', 'nova scotia duck tolling retriever', 'plott', 'dog', 'rhodesian ridgeback', 'bedlington terrier', 'groenendael', 'pembroke welsh corgi', 'komondor', 'pekingese', 'newfoundland dog', 'eskimo dog', 'doberman pinscher', 'havanese', 'dandie dinmont', 'lhasa apso', 'west highland white terrier', 'xoloitzcuintli', 'otter hound', 'whippet', 'kuvasz', 'parson russell terrier', 'borzoi', 'alaskan malamute', 'chinese shar-pei', 'mastiff', 'bluetick coonhound', 'basset', 'bulldog', 'kelpie', 'pointer', 'irish setter', 'cardigan', 'belgian sheepdog', 'german pinscher', 'pomeranian', 'rottweiler', 'norwegian buhund'}
+
+MY PRINT CHECK TO DO #4 - Extend the dictionary after checking in the dogfile whether the labels correspond to dog breed names
+Final Pet Image Label Dictionary has 4 key-value pairs.
+Image file -> [true pet label, classifier pet label, match true label=classifier label, match true labe l IS dogbreed, match classifier label IS dogbreed]
+Dictionary after checking labels in the dogfile text list:
+Dog_01.jpg -> ['dog', 'pembroke, pembroke welsh corgi, corgi', 0, 1, 1]
+Dog_02.jpg -> ['dog', 'pembroke, pembroke welsh corgi, corgi', 0, 1, 1]
+Kitchen_mixer_01.jpg -> ['kitchen mixer', 'espresso maker', 0, 0, 0]
+Young_lion_01.jpg -> ['young lion', 'dhole, cuon alpinus', 0, 0, 0]
+MY PRINT CHECK TO DO #4 - END
+
+
+     MATCH:
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier: pembroke, pembroke welsh corgi, corgi  
+PetLabelDog: 1  ClassLabelDog: 1
+
+          Kitchen_mixer_01.jpg: 
+Real:              kitchen mixer   Classifier:                 espresso maker  
+PetLabelDog: 0  ClassLabelDog: 0
+
+             Young_lion_01.jpg: 
+Real:                 young lion   Classifier:            dhole, cuon alpinus  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+MY PRINT CHECK TO DO #5 - Create dictionary summarizing the results dictionary
+Summary dictionary has 11 key-value pairs.
+Statistic -> [value]
+Dictionary after checking labels in the dogfile text list:
+n_images -> 4
+n_dogs_img -> 2
+n_notdogs_img -> 2
+n_match -> 0
+n_correct_dogs -> 2
+n_correct_notdogs -> 2
+n_correct_breed -> 0
+pct_match -> 0.0
+pct_correct_dogs -> 100.0
+pct_correct_breed -> 0.0
+pct_correct_notdogs -> 100.0
+MY PRINT CHECK TO DO #5 - END
+
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+*** Results Summary for CNN Model Architecture: resnet ***
+
+Number of Images: 4
+Number of Dog Images: 2
+Number of Non-Dog Images: 2
+
+*** Results Statistics ***
+pct_match: 0.00%
+pct_correct_dogs: 100.00%
+pct_correct_breed: 0.00%
+pct_correct_notdogs: 100.00%
+
+*** Misclassified Dogs ***
+None
+
+*** Misclassified Breeds ***
+Pet Image Label: dog | Classifier Label: pembroke, pembroke welsh corgi, corgi
+Pet Image Label: dog | Classifier Label: pembroke, pembroke welsh corgi, corgi
+
+*** End of Results Summary ***
+
+
+** Total Elapsed Runtime: 0:0:1
