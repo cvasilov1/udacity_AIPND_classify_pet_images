@@ -1,22 +1,25 @@
-# Ignore Python cache and compiled files
+# Ignore the following:
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
 
-# Ignore virtual environment
+# Virtual environment
 venv/
 env/
 
-# Ignore Spyder project files
+# Spyder project files
 .spyproject/
 
-# Ignore Jupyter Notebook checkpoints
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+
+# Log and temporary files
+*.log
+*.tmp
 
 # Ignore system files
 .DS_Store
 Thumbs.db
-
-# Ignore logs and output files
-*.log
-*.out
