@@ -8,7 +8,7 @@ The project is structured to run via command-line scripts (.bat for Windows and 
 
 **🏠 Project Structure**
 
-pet-image-classifier/
+udacity_AIPND_classify_pet_images/
 
 │── pet_images/ # Preloaded dataset of pet images
 
@@ -64,27 +64,71 @@ pet-image-classifier/
 
 │── vgg_uploaded-images.txt # VGG model results for uploaded images (output file)
 
-**🚀 Installation**
+**🚀 Installation Guide**
 
-**1️. Clone the Repository**
+This project was developed using **Python 3.11**. Before proceeding, ensure Python is installed on your system.
 
-git clone <https://github.com/YOUR_USERNAME/pet-image-classifier.git>
+Open a terminal and verify your Python version:
 
-cd pet-image-classifier
+python3 --version # macOS/Linux
 
-**2️. Install Dependencies**
+python --version # Windows
 
-This project was developed using Python **3.11**. Install required packages:
+If Python is not installed, download and install it from [python.org](https://www.python.org/).
 
-pip install -r requirements.txt
+1. **Clone the Repository**
 
-Or, if using Anaconda and assuming you wish to run the pet image classifier in a new environment:
+Open a terminal **(Command Prompt/PowerShell for Windows, Terminal for macOS/Linux)** and navigate to the directory where you want to clone the repository (e.g., Downloads):
 
-conda create --name pet_env python=3.11 -y
+cd ~/Downloads # macOS/Linux
 
-conda activate pet_env
+cd %USERPROFILE%\\Downloads # Windows
 
-pip install -r requirements.txt
+Clone the repository:
+
+git clone <https://github.com/cvasilov1/udacity_AIPND_classify_pet_images.git>
+
+Move into the project folder:
+
+cd udacity_AIPND_classify_pet_images
+
+**📝 Note for Git Bash** **users:**
+
+Git Bash behaves similarly to macOS/Linux when running commands. If you are using **Git Bash on Windows**, generally follow the macOS/Linux commands, not the Windows-specific ones.
+
+2. **Set Up a Virtual Environment & Install Dependencies**
+
+You can set up your environment in two ways: Python Virtual Environment (venv) or Anaconda (conda).
+
+**🔹 Option 1: Using Python's Built-in Virtual Environment (venv)**
+
+For users not using Anaconda:
+
+➡ **macOS/Linux (from Terminal)**
+
+python3 -m venv pet_env # Create virtual environment
+source pet_env/bin/activate # Activate virtual environment
+pip install -r requirements.txt # Install dependencies
+pip list # Verify installed packages
+
+➡ **Windows (from Command Prompt/PowerShell)**
+
+python -m venv pet_env # Create virtual environment
+pet_env\\Scripts\\activate # Activate virtual environment
+pip install -r requirements.txt # Install dependencies
+pip list # Verify installed packages
+
+**🔹 Option 2: Using Anaconda (from the Anaconda Prompt)**
+
+conda create --name pet_env python=3.11 -y # Create virtual environment specifying the Python version
+conda activate pet_env # Activate virtual environment
+conda install --file requirements.txt # Install dependencies from Conda
+conda list # Verify installed packages
+
+**📝 Note for Git Bash** **users:**  
+For Windows: Git Bash behaves like macOS/Linux, so use **source pet_env/bin/activate** instead of the Windows activation command.
+
+For Anaconda: Git Bash supports conda activate, but you might need to enable it first with: **conda init bash**
 
 | Library | Version | Reason | Installation Required? |
 | --- | --- | --- | --- |
@@ -196,4 +240,4 @@ SOFTWARE.
 
 **🤖 Acknowledgment**
 
-AI assistance was used for explaining concepts, for refining already written code (chiefly adding comments) and for outputting this README but the **code structure, logic, and implementation were independently designed**.
+AI assistance was used for explaining concepts, for refining already written code (chiefly adding comments) and for outputting this README but the **code structure, logic, and implementation were independently designed by cvasilov1**.
