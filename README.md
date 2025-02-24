@@ -107,42 +107,52 @@ For users not using Anaconda:
 ➡ **macOS/Linux (from Terminal)**
 
 python3 -m venv pet_env # Create virtual environment
+
 source pet_env/bin/activate # Activate virtual environment
+
 pip install -r requirements.txt # Install dependencies
+
 pip list # Verify installed packages
 
 ➡ **Windows (from Command Prompt/PowerShell)**
 
 python -m venv pet_env # Create virtual environment
+
 pet_env\\Scripts\\activate # Activate virtual environment
+
 pip install -r requirements.txt # Install dependencies
+
 pip list # Verify installed packages
 
 **🔹 Option 2: Using Anaconda (from the Anaconda Prompt)**
 
 conda create --name pet_env python=3.11 -y # Create virtual environment specifying the Python version
+
 conda activate pet_env # Activate virtual environment
+
 conda install --file requirements.txt # Install dependencies from Conda
+
 conda list # Verify installed packages
 
 **📝 Note for Git Bash** **users:**  
+
 For Windows: Git Bash behaves like macOS/Linux, so use **source pet_env/bin/activate** instead of the Windows activation command.
 
 For Anaconda: Git Bash supports conda activate, but you might need to enable it first with: **conda init bash**
 
-| Library | Version | Reason | Installation Required? |
-| --- | --- | --- | --- |
-| argparse | 3.10.0 | Parses command-line arguments (--dir, --arch, etc.). | Yes |
-| matplotlib | 3.10.0 | Used for plotting and saving images. | Yes |
-| numpy | 1.26.4 | Handles numerical computations. | Yes |
-| pandas | 2.2.3 | Reads and manipulates structured data (DataFrame). | Yes |
-| Pillow | 11.0.0 | Opens and processes images (PIL.Image). | Yes |
-| torch | 2.3.1 | Required for PyTorch model loading and inference. | Yes |
-| torchvision | 0.18.1a0 | Provides pre-trained models like ResNet, AlexNet, and VGG. | Yes |
-| re  | 2.2.1 | Built-in Python library. | No  |
-| os  | No version | Built-in Python library. | No  |
-| time | No version | Built-in Python library. | No  |
-| ast | No version | Built-in Python library. | No  |
+| Library       | Version  | Purpose  | Installation Required? |
+|--------------|---------|----------|------------------------|
+| matplotlib   | 3.10.0  | Generates plots and saves images (e.g., loss curves, predictions). | Yes |
+| numpy        | 1.26.4  | Supports numerical operations (e.g., matrix computations, tensor operations). | Yes |
+| pandas       | 2.2.3   | Reads, processes, and manipulates structured data (CSV, DataFrame). | Yes |
+| Pillow       | 11.0.0  | Handles image loading and manipulation (used for input preprocessing). | Yes |
+| torch        | 2.3.1   | Provides PyTorch functionality (deep learning framework). | Yes |
+| torchvision  | 0.18.1a0 | Supplies pre-trained models (ResNet, VGG, AlexNet) and image transforms. | Yes |
+| argparse     | 3.10.0  | Built-in command-line argument parser (--dir, --arch, etc.). | No (Built into Python) |
+| re          | 2.2.1   | Used for handling regular expressions (e.g., pattern matching). | No (Built into Python) |
+| os          | N/A     | Provides OS-related functions (e.g., file path handling). | No (Built into Python) |
+| time        | N/A     | Used for measuring execution time and implementing delays. | No (Built into Python) |
+| ast         | N/A     | Supports parsing and analyzing Python expressions safely. | No (Built into Python) |
 
 **📂 How the Code Works**
 
@@ -236,7 +246,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
 
 **🤖 Acknowledgment**
 
