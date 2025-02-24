@@ -74,13 +74,13 @@ cd pet-image-classifier
 
 **2️. Install Dependencies**
 
-Ensure you have Python **3.7+** installed. Install required packages:
+This project was developed using Python **3.11**. Install required packages:
 
 pip install -r requirements.txt
 
-Or, if using Anaconda:
+Or, if using Anaconda and assuming you wish to run the pet image classifier in a new environment:
 
-conda create --name pet_env python=3.9 -y
+conda create --name pet_env python=3.11 -y
 
 conda activate pet_env
 
@@ -93,12 +93,12 @@ pip install -r requirements.txt
 | numpy | 1.26.4 | Handles numerical computations. | Yes |
 | pandas | 2.2.3 | Reads and manipulates structured data (DataFrame). | Yes |
 | Pillow | 11.0.0 | Opens and processes images (PIL.Image). | Yes |
-| Torch | 2.3.1 | Required for PyTorch model loading and inference. | Yes |
-| Torchvision | 0.18.1a0 | Provides pre-trained models like ResNet, AlexNet, and VGG. | Yes |
-| Re  | 2.2.1 | Built-in Python library. | No  |
-| Os  | No version | Built-in Python library. | No  |
-| Time | No version | Built-in Python library. | No  |
-| Ast | No version | Built-in Python library. | No  |
+| torch | 2.3.1 | Required for PyTorch model loading and inference. | Yes |
+| torchvision | 0.18.1a0 | Provides pre-trained models like ResNet, AlexNet, and VGG. | Yes |
+| re  | 2.2.1 | Built-in Python library. | No  |
+| os  | No version | Built-in Python library. | No  |
+| time | No version | Built-in Python library. | No  |
+| ast | No version | Built-in Python library. | No  |
 
 **📂 How the Code Works**
 
